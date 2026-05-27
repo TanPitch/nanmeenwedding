@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meen - Nan</title>
+  <link rel="stylesheet" href="index.css">
+  <link rel="icon" type="image/x-icon" href="./img/icons/logo.png">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="panel relative w-[calc(100dvh + 40px)] h-screen overflow-hidden bg-[var(--bg)]">
+      <img id="large-image" class="w-full h-full object-cover object-center"
+        style="transition: object-position 0.3s ease;" src="./img/prewedding/Photo-26-Edit.png">
+      <div id="gradient-overlay" class="absolute inset-0 pointer-events-none transition-all duration-100 ease-out"
+        style="background: linear-gradient(to bottom, transparent 90%, var(--bg) 100%);"></div>
+      <div class="absolute top-[8%] left-[10%] w-[30%] parallax-element" data-speed="1.2"><img
+          src="./img/icons/logo.png"></div>
+    </div>
+
+    <!-- Name -->
+    <div class="panel flex flex-col items-center pt-10">
+      <span class="pb-8 text-xs md:text-md">WE ARE PLEASED TO INVITE YOU TO THE WEDDING OF</span>
+      <div class="flex flex-col items-center gap-2 font-noto py-10">
+        <span
+          class="text-[1.6rem] md:text-[3rem] fade-in-element opacity-0 translate-y-10 transition-all duration-1000 ease-out">นางสาวธัญญรัตน์
+          หิรัญธัญญารัตน์</span>
+        <span class="w-10 py-2 md:w-20 md:py-6"><img src="./img/icons/and.png"></span>
+        <span
+          class="text-[1.7rem] md:text-[3rem] fade-in-element opacity-0 translate-y-10 transition-all duration-1000 ease-out">นายธัญณัฐ
+          พิชิตวงศ์</span>
+      </div>
+    </div>
+
+    <!-- Date -->
+    <div class="panel flex flex-col items-center p-8 pb-16">
+      <!-- <span>_logo_mini_</span> -->
+      <span class="text-sm md:text-md">LET'S CELEBRATE TOGETHER ON</span>
+      <div class="flex flex-col items-center p-6 md:px-14 md:py-8 rounded-md">
+        <span
+          class="text-3xl md:text-5xl fade-in-element opacity-0 translate-y-10 transition-all duration-1000 ease-out">15
+          JULY 26</span>
+        <span
+          class="font-noto fade-in-element opacity-0 translate-y-10 transition-all duration-1000 ease-out">หยกพิมานย์
+          ปากน้ำ-สมุทรปราการ</span>
+      </div>
+      <div class="countdown flex flex-wrap gap-3 p-2 md:text-xl md:gap-10"></div>
+    </div>
+
+    <!-- Schedule & Theme -->
+    <div class="panel flex flex-wrap sm:flex-nowrap">
+      <div class="flex-2 flex flex-col items-center">
+        <span class="text-lg md:text-2xl pb-6">SCHEDULE</span>
+        <div class="flex gap-4 md:gap-12 text-md">
+          <div class="flex flex-col items-center">
+            <span class="pb-2">
+              <div class="img-wrapper h-15"><img class="h-15" src="img/icons/khanmark.png"></div>
+            </span>
+            <span class="text-lg">06:09</span>
+            <span class="font-noto text-center">พิธีแห่ขันหมาก</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="pb-2">
+              <div class="img-wrapper h-15"><img class="h-14 pt-2" src="img/icons/rings.png"></div>
+            </span>
+            <span class="text-lg">08:29</span>
+            <span class="font-noto text-center">ถ่ายภาพ<br>สวมแหวน</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="pb-2">
+              <div class="img-wrapper h-15"><img class="h-14 pt-2" src="img/icons/tea.png"></div>
+            </span>
+            <span class="text-lg">09:00</span>
+            <span class="font-noto text-center">พิธียกน้ำชา</span>
+          </div>
+          <div class="flex flex-col items-center">
+            <span class="pb-2">
+              <div class="img-wrapper h-15"><img class="h-14 pt-2" src="img/icons/table.png"></div>
+            </span>
+            <span class="text-lg">10:30</span>
+            <span class="font-noto text-center">ฉลองมงคลสมรส</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex-1 flex flex-col items-center pt-8 pl-0 md:pt-0 md:pl-8 md:pr-10">
+        <span class="text-lg md:text-2xl pb-6">THEME</span>
+        <div class="flex flex-col justify-center items-center h-full">
+          <div class="flex gap-4 md:gap-8">
+            <div class="w-7 h-7 border border-2 rounded-[50%] bg-[#ffffff]"></div>
+            <div class="w-7 h-7 border border-2 rounded-[50%] bg-[#dddddd]"></div>
+            <div class="w-7 h-7 border border-2 rounded-[50%] bg-[#a8a8a8]"></div>
+            <div class="w-7 h-7 border border-2 rounded-[50%] bg-[#8b8d91]"></div>
+            <div class="w-7 h-7 border border-2 rounded-[50%] bg-[#707478]"></div>
+          </div>
+          <span class="font-noto pt-4 text-lg md:text-md">ขาว - เทา</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- End & RSVP -->
+    <div class="panel flex flex-col pb-5">
+      <div class="flex flex-wrap">
+        <div class="flex flex-1 flex-col justify-center items-center p-5">
+          <span class="font-noto text-lg md:text-2xl tracking-wider text-center pb-5">
+            เพื่อให้เราสามารถวางแผนในการดูแลท่าน
+            ซึ่งเป็นแขกคนสำคัญได้อย่างเต็มที่ ขอรบกวนทุกท่านทำแบบตอบรับการเข้าร่วมงานให้เราด้วยนะคะ/ครับ</span>
+          <span class="text-sm md:text-md">HOPE TO SEE YOU AT OUR SPECIAL DAY</span>
+          <form
+            action="https://docs.google.com/forms/d/e/1FAIpQLSfcUfria5fhY-L8fuxleqaB1Md-05V1vksS3J_OoPgOx3nEpA/viewform?usp=publish-editor">
+
+            <button
+              class="font-noto mt-4 px-2.5 py-1.5 border-3 border-[var(--red-d)] rounded-4xl active:bg-[var(--red-d)] active:text-white hover:bg-[var(--red-d)] hover:text-white cursor-pointer transition-all duration-200 select-none">
+              กดเพื่อลงทะเบียนเข้าร่วมงาน
+            </button>
+          </form>
+        </div>
+        <div class="flex-1 hidden md:block">
+          <div class="img-wrapper m-4">
+            <img class="lightbox" src="./img/prewedding/Photo-101.JPG">
+            <!-- <img class="lightbox" src="./img/prewedding/Photo-53.JPG"> -->
+          </div>
+        </div>
+      </div>
+      <!-- <span class="font-noto text-center text-sm pt-4">ขออภัยหากมิได้มาเรียนเชิญด้วยตัวเอง</span> -->
+    </div>
+
+    <!-- Map & Gallery -->
+    <div class="flex flex-col gap-5 p-5 pb-0">
+      <div class="panel flex-1 fade-in-element opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+
+        <section class="splide">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="img-wrap">
+                  <img class="lightbox" src="./img/prewedding/Photo-6.JPG">
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="img-wrap">
+                  <img class="lightbox" src="./img/prewedding/Photo-12.JPG">
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="img-wrap">
+                  <img class="lightbox" src="./img/prewedding/Photo-26-Edit.png">
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="img-wrap">
+                  <img class="lightbox" src="./img/prewedding/Photo-34-Edit.JPG">
+                </div>
+              </li>
+              <!-- <li class="splide__slide">
+                <div class="img-wrap">
+                  <img class="lightbox" src="./img/prewedding/Photo-48.JPG">
+                </div>
+              </li> -->
+              <!-- <li class="splide__slide">
+                <div class="img-wrap">
+                  <img class="lightbox md:hidden" src="./img/prewedding/Photo-53.JPG">
+                </div>
+              </li> -->
+              <!-- <li class="splide__slide">
+                <div class="img-wrap">
+                  <img class="lightbox" src="./img/prewedding/Photo-42.JPG">
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="img-wrap">
+                  <img class="lightbox" src="./img/prewedding/Photo-14.JPG">
+                </div>
+              </li> -->
+              <!-- <li class="splide__slide">
+                <div class="img-wrap">
+                  <img class="lightbox" src="./img/prewedding/Photo-71.JPG">
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="img-wrap">
+                  <img class="lightbox" src="./img/prewedding/Photo-83.JPG">
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="img-wrap">
+                  <img class="lightbox" src="./img/prewedding/Photo-88.JPG">
+                </div>
+              </li> -->
+              <li class="splide__slide">
+                <div class="img-wrap">
+                  <img class="lightbox" src="./img/prewedding/Photo-95.JPG">
+                </div>
+              </li>
+              <!-- <li class="splide__slide">
+                <div class="img-wrap">
+                  <img class="lightbox" src="./img/prewedding/Photo-100.JPG">
+                </div>
+              </li>
+              <li class="splide__slide">
+                <div class="img-wrap">
+                  <img class="lightbox" src="./img/prewedding/Photo-101.JPG">
+                </div>
+              </li> -->
+              <li class="splide__slide">
+                <div class="img-wrap">
+                  <img class="lightbox" src="./img/prewedding/Photo-187.JPG">
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      </div>
+      <div class="panel flex-1 fade-in-element opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+        <div id="map" class="h-[200px] md:h-[400px] rounded-lg"></div>
+      </div>
+    </div>
+
+    <div class="w-full p-5 text-center text-xs text-zinc-700/60">15 JULY 2026, #NanMeen</div>
+
+    <!-- <div class="hiddens">
+      <audio controls autoplay>
+        <source src="./audio/往事只能回味.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div> -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>

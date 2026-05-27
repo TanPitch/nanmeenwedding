@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+Thai:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0");
+
+:root {
+  --bg: #ebebeb;
+  --red-d: #580606;
+}
+
+body {
+  margin: 0;
+  border: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+::selection {
+  color: #d8d8d8;
+  background: var(--red-d);
+}
+
+.font-roboto {
+  font-family: "Roboto", sans-serif;
+}
+
+.font-josefin {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.font-noto {
+  font-family: "Noto Sans Thai", sans-serif;
+}
+
+.font-sarabun {
+  font-family: "Sarabun", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2b1010;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #743333;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #743333;
+}
+
+.page-wrapper {
+  width: 100dvw;
+  height: 100dvh;
+  overflow: auto;
+  background: var(--bg);
+
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.img-wrapper {
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+/* casoullel */
+.img-wrap {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  height: 300px;
+
+  &>img {
+    height: 100%;
+  }
+}
+
+.panel {
+  width: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
+
+/* .h-full {
+  height: 100vh;
+  background: #580606;
+} */

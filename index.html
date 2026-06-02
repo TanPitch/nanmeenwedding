@@ -3,18 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="white">
-  <meta name="application-name" content="Nan - Meen">
-  <meta name="theme-color" content="#ebebeb">
-  <link rel="apple-touch-icon" href="./img/icons/logo.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="./img/icons/logo.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="./img/icons/logo.png">
-  <meta name="apple-mobile-web-app-title" content="Nan - Meen">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Meen - Nan</title>
   <link rel="stylesheet" href="index.css">
   <link rel="icon" type="image/x-icon" href="./img/icons/logo.png">
@@ -72,55 +61,66 @@
       <div class="countdown flex flex-wrap gap-3 p-2 md:text-xl md:gap-10"></div>
     </div>
 
-    <!-- Schedule & Theme -->
-    <div class="panel flex flex-wrap sm:flex-nowrap">
-      <div class="flex-2 flex flex-col items-center">
-        <span class="text-lg md:text-2xl pb-6">SCHEDULE</span>
-        <div class="flex gap-4 md:gap-12 text-md">
-          <div class="flex flex-col items-center">
-            <span class="pb-2">
-              <div class="img-wrapper h-15"><img class="h-15" src="img/icons/khanmark.png"></div>
-            </span>
-            <span class="text-lg">06:09</span>
-            <span class="font-noto text-center">พิธีแห่ขันหมาก</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <span class="pb-2">
-              <div class="img-wrapper h-15"><img class="h-14 pt-2" src="img/icons/rings.png"></div>
-            </span>
-            <span class="text-lg">08:29</span>
-            <span class="font-noto text-center">ถ่ายภาพ<br>สวมแหวน</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <span class="pb-2">
-              <div class="img-wrapper h-15"><img class="h-14 pt-2" src="img/icons/tea.png"></div>
-            </span>
-            <span class="text-lg">09:00</span>
-            <span class="font-noto text-center">พิธียกน้ำชา</span>
-          </div>
-          <div class="flex flex-col items-center">
-            <span class="pb-2">
-              <div class="img-wrapper h-15"><img class="h-14 pt-2" src="img/icons/table.png"></div>
-            </span>
-            <span class="text-lg">10:30</span>
-            <span class="font-noto text-center">ฉลองมงคลสมรส</span>
-          </div>
+    <!-- Schedule  -->
+    <div class="panel flex flex-col items-center">
+      <span class="text-lg md:text-2xl pb-6">SCHEDULE</span>
+      <div class="flex justify-center gap-x-10 gap-y-2 md:gap-x-20 text-md flex-wrap md:flex-nowrap md:pb-10">
+        <div class="flex flex-col items-center">
+          <span class="pb-2">
+            <div class="img-wrapper h-15"><img class="h-15" src="img/icons/khanmark.png"></div>
+          </span>
+          <span class="text-lg">06:09</span>
+          <span class="font-noto text-center">พิธีแห่ขันหมาก</span>
         </div>
-      </div>
-      <div class="flex-1 flex flex-col items-center pt-8 pl-0 md:pt-0 md:pl-8 md:pr-10">
-        <span class="text-lg md:text-2xl pb-6">THEME</span>
-        <div class="flex flex-col justify-center items-center h-full">
-          <div class="flex gap-4 md:gap-8">
-            <div class="w-7 h-7 border border-2 rounded-[50%] bg-[#ffffff]"></div>
-            <div class="w-7 h-7 border border-2 rounded-[50%] bg-[#dddddd]"></div>
-            <div class="w-7 h-7 border border-2 rounded-[50%] bg-[#a8a8a8]"></div>
-            <div class="w-7 h-7 border border-2 rounded-[50%] bg-[#8b8d91]"></div>
-            <div class="w-7 h-7 border border-2 rounded-[50%] bg-[#707478]"></div>
-          </div>
-          <span class="font-noto pt-4 text-lg md:text-md">ขาว - เทา</span>
+        <div class="flex flex-col items-center">
+          <span class="pb-2">
+            <div class="img-wrapper h-15"><img class="h-14 pt-2" src="img/icons/rings.png"></div>
+          </span>
+          <span class="text-lg">08:29</span>
+          <span class="font-noto text-center">ถ่ายภาพ<br>สวมแหวน</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="pb-2">
+            <div class="img-wrapper h-15"><img class="h-14 pt-2" src="img/icons/tea.png"></div>
+          </span>
+          <span class="text-lg">09:00</span>
+          <span class="font-noto text-center">พิธียกน้ำชา</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="pb-2">
+            <div class="img-wrapper h-15"><img class="h-14 pt-2" src="img/icons/photo.png"></div>
+          </span>
+          <span class="text-lg">09:30</span>
+          <span class="font-noto text-center">ถ่ายภาพร่วมกัน</span>
+        </div>
+        <div class="flex flex-col items-center">
+          <span class="pb-2">
+            <div class="img-wrapper h-15"><img class="h-14 pt-2" src="img/icons/table.png"></div>
+          </span>
+          <span class="text-lg">10:30</span>
+          <span class="font-noto text-center">ฉลองมงคลสมรส</span>
         </div>
       </div>
     </div>
+
+    <div class="flex h-[2px] mx-20 mt-8 mb-4 md:mt-0 md:mb-10 bg-zinc-800/50"></div>
+
+    <!-- Theme -->
+    <div class="panel flex flex-col items-center pt-8 pl-0 md:pt-0 md:pl-8 md:pr-10">
+      <span class="text-lg md:text-2xl pb-6">THEME</span>
+      <div class="flex flex-col justify-center items-center h-full">
+        <div class="flex gap-4 md:gap-8">
+          <div class="w-7 h-7 border border-2 rounded-[50%] bg-[#ffffff]"></div>
+          <div class="w-7 h-7 border border-2 rounded-[50%] bg-[#dddddd]"></div>
+          <div class="w-7 h-7 border border-2 rounded-[50%] bg-[#a8a8a8]"></div>
+          <div class="w-7 h-7 border border-2 rounded-[50%] bg-[#8b8d91]"></div>
+          <div class="w-7 h-7 border border-2 rounded-[50%] bg-[#707478]"></div>
+        </div>
+        <span class="font-noto pt-4 text-lg md:text-md">ขาว - เทา</span>
+      </div>
+    </div>
+
+    <div class="flex h-[2px] mx-20 mt-8 mb-4 md:mb-10 bg-zinc-800/50"></div>
 
     <!-- End & RSVP -->
     <div class="panel flex flex-col pb-5">
@@ -242,13 +242,6 @@
     </div>
 
     <div class="w-full p-5 text-center text-xs text-zinc-700/60">15 JULY 2026, #NanMeen</div>
-
-    <!-- <div class="hiddens">
-      <audio controls autoplay>
-        <source src="./audio/往事只能回味.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div> -->
 
     <script src="index.js"></script>
 </body>

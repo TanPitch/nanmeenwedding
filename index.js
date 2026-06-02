@@ -21,7 +21,7 @@ function initFocalPoint() {
 
     // desktop
     else {
-        img.style.objectPosition = "center 0%";
+        img.style.objectPosition = "center 27%";
     }
 }
 

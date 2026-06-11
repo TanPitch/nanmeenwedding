@@ -190,12 +190,12 @@ const initMap = () => {
 // Image
 const initImg = () => {
     const lightboxs = document.querySelectorAll(".lightbox");
-    // lightboxs.forEach((el) => {
-    //     el.onclick = () => {
-    //         const instance = basicLightbox.create(`<img class="rounded-md" src="${el.src}">`);
-    //         instance.show();
-    //     };
-    // });
+     lightboxs.forEach((el) => {
+         el.onclick = () => {
+             const instance = basicLightbox.create(`<img class="rounded-md" src="${el.src}">`);
+             instance.show();
+         };
+     });
 
     const imgs = document.querySelectorAll("img");
     imgs.forEach((el) => {
